@@ -1,0 +1,39 @@
+// .favorites{
+//     padding-left: 30px;
+//     display: flex;
+//     &__title{
+//         text-align: center;
+//         padding-left: 20px;
+//         color: $mainColor;
+//     }
+//     &__list{
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//     }
+// }
+
+// .js-favorites{
+//     background-color: $mainColor;
+//     color: white;
+// }
+
+.favorites{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title{
+        color: $mainColor;
+
+    }
+    &__list{
+        color: white;
+        background-color: $mainColor;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+}

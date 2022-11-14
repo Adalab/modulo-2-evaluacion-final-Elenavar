@@ -1,37 +1,19 @@
 @import 'core/reset';
-// @import 'core/variables';
+@import 'core/variables';
 //@import 'components/code';
 //@import 'components/links';
 //@import 'layout/page';
 // @import 'layout/header';
 // @import 'layout/footer';
+@import 'layout/characters';
+@import 'layout/favorites';
 
 .main {
     display: grid;
     grid-template-columns: 1fr 250px;
-  }
-.img{
-  width: 100px;
 }
 
-.js-list{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.itemList{
-  padding: 15px;
-  width: 150px;
-  font-size: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.title{
+  color: $mainColor;
   text-align: center;
-}
-
-.js-favourites{
-  background-color: violet;
 }

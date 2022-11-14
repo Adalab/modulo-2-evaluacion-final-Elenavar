@@ -16,5 +16,22 @@
 
 .js-list{
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  gap: 15px;
+}
+
+.itemList{
+  padding: 15px;
+  width: 150px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.js-favourites{
+  background-color: violet;
 }

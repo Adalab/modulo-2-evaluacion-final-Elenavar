@@ -5,3 +5,16 @@
 //@import 'layout/page';
 // @import 'layout/header';
 // @import 'layout/footer';
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+  }
+.img{
+  width: 100px;
+}
+
+.js-list{
+  display: flex;
+  flex-wrap: wrap;
+}

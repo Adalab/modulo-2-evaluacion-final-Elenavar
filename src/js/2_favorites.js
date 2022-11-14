@@ -1,3 +1,4 @@
+'use strict';
 function findFavoritesCharacters(event) {
   const selectedCharacter = allCharacters.find(
     (char) => char.char_id === parseInt(event.currentTarget.id)

@@ -9,10 +9,13 @@
 @import 'layout/favorites';
 
 .main {
-    display: grid;
-    grid-template-columns: 1fr 250px;
+    display: flex;
+    flex-direction: column;
 }
-
+.allCharacters{
+  display: grid;
+  grid-template-columns: 1fr 250px;
+}
 .js-favorites{
   color: white;
   background-color: $mainColor;

@@ -1,3 +1,5 @@
+'use strict';
+
 function renderOneCharacter(name, status, img, id) {
   //Crear articulo
   const articleElement = document.createElement('article');

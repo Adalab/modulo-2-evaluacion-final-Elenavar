@@ -49,6 +49,7 @@ function addEvents() {
 }
 
 function renderAllCharacters(allCharacters) {
+  list.innerHTML = '';
   for (const char of allCharacters) {
     let liElement = renderOneCharacter(
       char.name,

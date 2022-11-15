@@ -8,12 +8,21 @@
     }
     &__list{
         color: white;
-        background-color: $mainColor;
+        // background-color: $mainColor;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 5px;
+        position: relative;
     }
 
+}
+
+.cross{
+    font-size: 15px;
+    background-color: black;
+    padding: 0 5px;
+    position: relative;
+    transform: translate(50px, 5px);
 }

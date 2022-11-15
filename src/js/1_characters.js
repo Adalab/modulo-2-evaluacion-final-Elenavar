@@ -36,9 +36,13 @@ function renderOneCharacter(name, status, img, id) {
 }
 
 function handleClick(event) {
-  event.currentTarget.classList.add('js-favorites');
+  click = event.currentTarget;
+  click.classList.add('js-favorites');
   findFavoritesCharacters(event);
   localStorage.setItem('favorites', JSON.stringify(favoritesCharacters));
+  setTimeout(() => {
+    click.classList.remove('js-favorites');
+  }, 900);
 }
 
 function addEvents() {

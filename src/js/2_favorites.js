@@ -1,6 +1,4 @@
 'use strict';
-const li = document.querySelector('.js-list__itemList--article');
-
 function findFavoritesCharacters(event) {
   const selectedCharacter = allCharacters.find(
     (char) => char.char_id === parseInt(event.currentTarget.id)
@@ -41,12 +39,10 @@ function renderFavoriteCharacter(selectedCharacter) {
 }
 
 function handleDelete(event) {
-  console.log('estoyaqui');
   localStorage.removeItem('favorites');
   const favoritesFiltered = favoritesCharacters.filter(
     (char) => char.char_id !== parseInt(event.currentTarget.id)
   );
-  console.log(favoritesFiltered);
   favoritesList.innerHTML = '';
   for (const fav of favoritesFiltered) {
     renderFavoriteCharacter(fav);

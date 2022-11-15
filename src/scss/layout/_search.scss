@@ -11,10 +11,18 @@
     gap: 10px;
 
     &__input{
+        font-family: 'Sono', sans-serif;
+        padding: 2px;
         width: 65%;
+        border-color: #96ccde;
+        border-radius: 3px;
     }
     &__button{
+        padding: 3px;
         width: 15%;
+        background-color: #96ccde;
+        border: $mainColor;
+        border-radius: 2px;
         cursor: pointer;
     }
 }

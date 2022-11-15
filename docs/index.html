@@ -1,65 +1,60 @@
 <!DOCTYPE html>
-<html lang="es">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Awesome Women Cards</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
-    rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <link rel="stylesheet" href="./assets/css/main.css" />
-  
- 
-  <!-- <link rel="icon" href="./assets/images/favicon.png" /> -->
-</head>
-
-<body>
-  <main class="main">
-    <div class="main__img">
-      <img
-        class="landing-img"
-        src="./assets/images/awesome-woman-cards.png"
-        alt="logo awesome"
-      />
-    </div>
-    <h1 class="h1"></h1>
-    <!-- display none para que no se vea y encima poner la imagen -->
-    <section class="main__title">
-      <h2 class="main__title--create">Crea tu tarjeta de visita</h2>
-      <p class="main__title--text">
-        Crea mejores contactos profesionales de forma fácil y cómoda
-      </p>
-    </section>
-    <section class="main__options">
-      <ul class="main__options--list">
-        <li class="cop">
-          <i class="fa-icon fa-regular fa-object-ungroup large"></i> diseña
-        </li>
-        <li class="cop">
-          <i class="fa-icon fa-regular fa-keyboard"></i> rellena
-        </li>
-        <li class="cop">
-          <i class="fa-icon fa-solid fa-share-nodes"></i> comparte
-        </li>
-      </ul>
-    </section>
-    <section class="main__start js-start">
-      <a class="main__start--create" href="./create.html">comenzar</a>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p class="footer__copy">Awesome Women-cards @2022</p>
-    <img
-      class="footer__logo"
-      src="./assets/images/logo-adalab.png"
-      alt="Logo Adalab"
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;500&family=Sono:wght@600&display=swap"
+      rel="stylesheet"
     />
-  </footer>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <header class="header">
+      <h1 class="header__title">Breaking Bad</h1>
+    </header>
 
-  <script src="./assets/js/main.js"></script>
-</body>
+    <main class="main">
+      <form method="post" class="js-form form">
+        <input
+          type="text"
+          id="name"
+          class="js-search form__input"
+          placeholder="Example: Walter White"
+        />
+        <input type="submit" value="Buscar" class="js-button form__button" />
+      </form>
 
+      <div class="allCharacters">
+        <section class="characters">
+          <h2 class="title">Characters &hearts;</h2>
+          <ul class="js-list list"></ul>
+        </section>
+
+        <section class="favorites">
+          <h2 class="favorites__title">Favorites&starf;</h2>
+          <ul class="js-list-favorites favorites__list"></ul>
+        </section>
+
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="footer__text">
+        Breaking Bad is regarded as one of the greates television series of all the
+        time, and with 16 Primetime Emmy Awards &copy; Adalab 2022
+      </p>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>

@@ -5,7 +5,7 @@
 //@import 'components/links';
 //@import 'layout/page';
 @import 'layout/header';
-// @import 'layout/footer';
+@import 'layout/footer';
 @import 'layout/search';
 @import 'layout/characters';
 @import 'layout/favorites';
@@ -26,6 +26,7 @@
 }
 
 .title{
+  font-family: 'Sono', sans-serif;
   color: $mainColor;
   text-align: center;
 }

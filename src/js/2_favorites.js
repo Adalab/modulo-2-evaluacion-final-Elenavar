@@ -1,4 +1,6 @@
 'use strict';
+const li = document.querySelector('.js-list__itemList--article');
+
 function findFavoritesCharacters(event) {
   const selectedCharacter = allCharacters.find(
     (char) => char.char_id === parseInt(event.currentTarget.id)
@@ -6,15 +8,24 @@ function findFavoritesCharacters(event) {
   const favoritesIndex = favoritesCharacters.findIndex(
     (char) => char.char_id === parseInt(event.currentTarget.id)
   );
+  console.log(favoritesIndex);
   if (favoritesIndex === -1) {
     favoritesCharacters.push(selectedCharacter);
     renderFavoriteCharacter(selectedCharacter);
   }
 }
 
+function addFavoritesEvents() {
+  const cross = document.querySelectorAll('.cross');
+  for (const item of cross) {
+    item.addEventListener('click', handleDelete);
+  }
+}
+
 function renderFavoriteCharacter(selectedCharacter) {
   const icon = document.createElement('p');
   icon.classList.add('cross');
+  icon.setAttribute('id', selectedCharacter.char_id);
   const x = document.createTextNode('x');
   icon.appendChild(x);
   favoritesList.appendChild(icon);
@@ -26,6 +37,22 @@ function renderFavoriteCharacter(selectedCharacter) {
       selectedCharacter.char_id
     )
   );
+  addFavoritesEvents();
+}
+
+function handleDelete(event) {
+  console.log('estoyaqui');
+  localStorage.removeItem('favorites');
+  const favoritesFiltered = favoritesCharacters.filter(
+    (char) => char.char_id !== parseInt(event.currentTarget.id)
+  );
+  console.log(favoritesFiltered);
+  favoritesList.innerHTML = '';
+  for (const fav of favoritesFiltered) {
+    renderFavoriteCharacter(fav);
+  }
+  localStorage.setItem('favorites', JSON.stringify(favoritesFiltered));
+  favoritesCharacters = favoritesFiltered;
 }
 
 fetch('https://www.breakingbadapi.com/api/characters')
@@ -34,3 +61,12 @@ fetch('https://www.breakingbadapi.com/api/characters')
     allCharacters = data;
     renderAllCharacters(allCharacters);
   });
+
+const favoritesSaved = JSON.parse(localStorage.getItem('favorites'));
+
+if (favoritesSaved !== null) {
+  favoritesCharacters = favoritesSaved;
+  for (const favorite of favoritesCharacters) {
+    renderFavoriteCharacter(favorite);
+  }
+}

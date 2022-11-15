@@ -4,9 +4,10 @@
     align-items: center;
     &__title{
         color: $mainColor;
-
+        font-family: 'Sono', sans-serif;
     }
     &__list{
+        font-family: 'Roboto', sans-serif;
         color: white;
         // background-color: $mainColor;
         display: flex;
@@ -24,6 +25,7 @@
 }
 
 .cross{
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
     color: black;
@@ -32,4 +34,5 @@
     padding: 0 5px;
     position: relative;
     transform: translate(67px, 30px);
+    cursor: pointer;
 }

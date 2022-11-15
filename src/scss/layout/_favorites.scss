@@ -8,12 +8,28 @@
     }
     &__list{
         color: white;
-        background-color: $mainColor;
+        // background-color: $mainColor;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         gap: 5px;
+        position: relative;
+        .js-list__itemList{
+            box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+            background-color: $mainColor;
+        }
+
     }
 
+}
+
+.cross{
+    font-size: 15px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    color: black;
+    background-color: white;
+    border-radius: 50px;
+    padding: 0 5px;
+    position: relative;
+    transform: translate(67px, 30px);
 }

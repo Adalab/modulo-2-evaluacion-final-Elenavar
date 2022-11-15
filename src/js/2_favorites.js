@@ -13,6 +13,11 @@ function findFavoritesCharacters(event) {
 }
 
 function renderFavoriteCharacter(selectedCharacter) {
+  const icon = document.createElement('p');
+  icon.classList.add('cross');
+  const x = document.createTextNode('x');
+  icon.appendChild(x);
+  favoritesList.appendChild(icon);
   favoritesList.appendChild(
     renderOneCharacter(
       selectedCharacter.name,

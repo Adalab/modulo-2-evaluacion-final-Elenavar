@@ -7,10 +7,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 4px solid #96ccde;
     &__title{
         background-color:rgba($color: white, $alpha: 0.7);
         padding: 0 10px;
         font-size: 50px;
-        color: $mainColor;
+        color: #c05957;
     }
 }

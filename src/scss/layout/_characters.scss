@@ -2,22 +2,25 @@
 // }
 .js-list{
     border-right: 1px solid $mainColor;
-
     display: flex;
-    // justify-content: center;
-    // align-items: center;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 5px;
     &__itemList{
-        width: 150px;
-        height: 200px;
         font-size: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         &--article{
-            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 170px;
+            height: 230px;
+            box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
         }
     }
 }

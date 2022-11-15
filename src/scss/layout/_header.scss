@@ -1,0 +1,17 @@
+.header{
+    height: 300px;
+    background-image: url('https://www.wallpaperup.com/uploads/wallpapers/2013/08/20/136473/89620c3fe3f6b393b90487b29c9b9925-700.jpg');
+    background-origin: content-box;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid #96ccde;
+    &__title{
+        background-color:rgba($color: white, $alpha: 0.7);
+        padding: 0 10px;
+        font-size: 50px;
+        color: #c05957;
+    }
+}

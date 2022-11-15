@@ -10,23 +10,3 @@
 @import 'layout/characters';
 @import 'layout/favorites';
 @import 'pages/index';
-
-.main {
-    display: flex;
-    flex-direction: column;
-    border-top: 6px solid #96ccde
-}
-.allCharacters{
-  display: grid;
-  grid-template-columns: 1fr 250px;
-}
-.js-favorites{
-  color: white;
-  background-color: rgba($color: $mainColor, $alpha: 0.6);
-}
-
-.title{
-  font-family: 'Sono', sans-serif;
-  color: $mainColor;
-  text-align: center;
-}

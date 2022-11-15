@@ -19,7 +19,18 @@
             box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
             background-color: $mainColor;
         }
-
+    }
+    &__button{
+        font-size: 15px;
+        font-family: 'Sono', sans-serif;
+        font-weight: 600;
+        margin-top: 10px;
+        padding: 5px 10px;
+        background-color: $secondColor;
+        border: $secondColor;
+        border-radius: 5px;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+        
     }
 
 }

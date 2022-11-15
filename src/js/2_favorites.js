@@ -51,6 +51,14 @@ function handleDelete(event) {
   favoritesCharacters = favoritesFiltered;
 }
 
+function deleteAll() {
+  localStorage.removeItem('favorites');
+  favoritesList.innerHTML = '';
+  favoritesCharacters = [];
+}
+
+buttonDelete.addEventListener('click', deleteAll);
+
 fetch('https://www.breakingbadapi.com/api/characters')
   .then((response) => response.json())
   .then((data) => {

@@ -1,35 +1,8 @@
-// .characters{
-// }
-.js-list{
-    
-    border-right: 1px solid $mainColor;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 5px;
-    &__itemList{
-        font-family: 'Roboto', sans-serif;
-        font-size: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        &--article{
-            gap: 2px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 170px;
-            height: 230px;
-            box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
-        }
+.characters{
+    &__title{
+        font-family: 'Sono', sans-serif;
+        color: $mainColor;
+    text-align: center;
     }
-}
-
-.img{
-    width: 100px;
-    cursor: pointer;
 }
  
